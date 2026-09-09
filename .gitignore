@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.db
+*.db-journal
+.env
+apps/server/data/
+apps/server/backups/
+apps/server/logs/
+.DS_Store
+.claude/
+.impeccable/
+doc/

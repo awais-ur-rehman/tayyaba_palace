@@ -1,0 +1,15 @@
+{
+  "name": "tayyaba-palace",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev:server": "pnpm --filter @tayyaba/server dev",
+    "dev:web": "pnpm --filter @tayyaba/web dev",
+    "build": "pnpm --filter @tayyaba/web build && pnpm --filter @tayyaba/server build",
+    "db:migrate": "pnpm --filter @tayyaba/server db:migrate",
+    "db:seed": "pnpm --filter @tayyaba/server db:seed"
+  }
+}
