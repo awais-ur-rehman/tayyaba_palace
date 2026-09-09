@@ -9,6 +9,7 @@
     "dev:server": "pnpm --filter @tayyaba/server dev",
     "dev:web": "pnpm --filter @tayyaba/web dev",
     "build": "pnpm --filter @tayyaba/web build && pnpm --filter @tayyaba/server build",
+    "start": "pnpm --filter @tayyaba/server start",
     "db:migrate": "pnpm --filter @tayyaba/server db:migrate",
     "db:seed": "pnpm --filter @tayyaba/server db:seed"
   }

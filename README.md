@@ -10,6 +10,8 @@ laptop at the venue.
   running on the venue laptop: install steps, verifying the PRA fiscal
   device and printer are actually connected, what to fill in before your
   first test, and the sandbox test plan.
+- **[doc/FORM_FIELDS.md](doc/FORM_FIELDS.md)** — every field in every form:
+  what it's for, whether it's required, and an example value.
 - [doc/FLOW.md](doc/FLOW.md) — screen-by-screen UX behaviour.
 - [doc/TECHNICAL_SPEC.md](doc/TECHNICAL_SPEC.md) — architecture, schema, API.
 - [doc/PRA_INTEGRATION.md](doc/PRA_INTEGRATION.md) — everything about the

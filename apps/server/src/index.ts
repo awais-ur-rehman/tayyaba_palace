@@ -63,6 +63,17 @@ startBackupScheduler();
 app.listen({ port: config.port, host: "127.0.0.1" }, (err, address) => {
   if (err) {
     logger.error(err);
+    // Startup failures must be visible on the console, not just the log
+    // file — an operator staring at a blank terminal has no way to know
+    // the process even tried to start.
+    if ((err as NodeJS.ErrnoException).code === "EADDRINUSE") {
+      console.error(
+        `Port ${config.port} is already in use. Another copy of the server may already be running — ` +
+          `stop it first, or change PORT in .env.`
+      );
+    } else {
+      console.error("Failed to start server:", err.message);
+    }
     process.exit(1);
   }
   console.log(`Tayyaba Palace server listening at ${address}`);
